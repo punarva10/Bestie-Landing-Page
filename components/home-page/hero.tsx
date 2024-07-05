@@ -20,9 +20,8 @@ const Hero = ({setShowModal} : {setShowModal: Dispatch<SetStateAction<boolean>>}
       <Container>
         <div>
           <Button
-
             asChild
-            className="mb-6 w-fit h-12 text-base bg-gradient-to-br from-blue-500 to-purple-400 text-white"
+            className="mb-6 w-fit h-12 text-base bg-gradient-to-br from-blue-500 to-purple-400 text-white cursor-pointer"
             size={"sm"}
             variant={"outline"}
           >

@@ -28,7 +28,7 @@ const CTA = ({
         </h3>
         <div className="not-prose mx-auto flex items-center gap-2">
           <Button
-            className="w-fit h-12 bg-gradient-to-br from-blue-500 to-purple-400 text-white"
+            className="w-fit h-12 bg-gradient-to-br from-blue-500 to-purple-400 text-white cursor-pointer"
             asChild
             onClick={() => setShowModal(true)}
           >
