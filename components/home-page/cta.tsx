@@ -8,21 +8,31 @@ import Balancer from "react-wrap-balancer";
 import { Button } from "@/components/ui/button";
 
 // Custom components
-import { Section, Container } from "@/components/craft";
+import { Container, Section } from "@/components/craft";
+import { Dispatch, SetStateAction } from "react";
 
-const CTA = () => {
+const CTA = ({
+  setShowModal,
+}: {
+  setShowModal: Dispatch<SetStateAction<boolean>>;
+}) => {
   return (
     <Section className="px-4">
       <Container className="flex flex-col items-center gap-6 rounded-lg border bg-accent/50 p-6 text-center md:rounded-xl md:p-12">
         <h2 className="!my-0">Take control of your social life</h2>
         <h3 className="!mb-0 text-muted-foreground">
           <Balancer>
-            It is estimated that people will use approximately 93% of their free time on social media. It&apos;s high time we put a stop to this. 
+            It is estimated that people will use approximately 93% of their free
+            time on social media. It&apos;s high time we put a stop to this.
           </Balancer>
         </h3>
         <div className="not-prose mx-auto flex items-center gap-2">
-          <Button className="w-fit h-16" asChild>
-            <Link href="#">JOIN THE WAITLIST</Link>
+          <Button
+            className="w-fit h-12 bg-gradient-to-br from-blue-950 to-purple-900 text-white"
+            asChild
+            onClick={() => setShowModal(true)}
+          >
+            <div>JOIN THE WAITLIST {"->"}</div>
           </Button>
         </div>
       </Container>

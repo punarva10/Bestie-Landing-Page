@@ -16,22 +16,22 @@ export default function Home() {
     <Main>
       <Section id="hero">
         <Container>
-          <Hero />
+          <Hero setShowModal={setShowModal}/>
         </Container>
       </Section>
       <Section id="feature-left">
         <Container>
-          <FeatureLeft />
+          <FeatureLeft setShowModal={setShowModal}/>
         </Container>
       </Section>
       <Section id="feature-right">
         <Container>
-          <FeatureRight />
+          <FeatureRight setShowModal={setShowModal}/>
         </Container>
       </Section>
       <Section id="cta">
         <Container>
-          <CTA />
+          <CTA setShowModal={setShowModal}/>
         </Container>
       </Section>
       <Section id="footer">

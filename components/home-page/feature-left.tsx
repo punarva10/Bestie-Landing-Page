@@ -7,9 +7,13 @@ import * as Craft from "@/components/craft";
 import { Button } from "@/components/ui/button";
 
 // Asset imports
-import Placeholder from "@/public/placeholder.webp";
+import { Dispatch, SetStateAction } from "react";
 
-const FeatureLeft = () => {
+const FeatureLeft = ({
+  setShowModal,
+}: {
+  setShowModal: Dispatch<SetStateAction<boolean>>;
+}) => {
   return (
     <Craft.Section>
       <Craft.Container className="grid items-stretch md:grid-cols-2 md:gap-12">
@@ -25,16 +29,20 @@ const FeatureLeft = () => {
         <div className="flex flex-col gap-6 py-8">
           <h3 className="!my-0">Replace Your Whatsapp</h3>
           <p className="font-light leading-[1.4] opacity-70">
-            Avoid the clutter of all your college groups, your family groups and all the advertising spam you receive on whatsapp. <br /> <br/>
-            An app to purely just talk to the most important people in your life. <br /> <br /> 
-            And no, we will not use your chats to train our ad model like a certain other company (ahem ahem)
+            Avoid the clutter of all your college groups, your family groups and
+            all the advertising spam you receive on whatsapp. <br /> <br />
+            An app to purely just talk to the most important people in your
+            life. <br /> <br />
+            And no, we will not use your chats to train our ad model like a
+            certain other company (ahem ahem)
           </p>
           <div className="not-prose flex items-center gap-2">
-            <Button className="w-fit" asChild>
-              <Link href="#">Get Started</Link>
-            </Button>
-            <Button className="w-fit" variant="link" asChild>
-              <Link href="#">Learn More {"->"}</Link>
+            <Button
+              className="w-fit bg-gradient-to-br from-blue-950 to-purple-900 text-white"
+              asChild
+              onClick={() => setShowModal(true)}
+            >
+              <div>Get Started {"->"}</div>
             </Button>
           </div>
         </div>
