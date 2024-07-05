@@ -38,7 +38,7 @@ const FeatureLeft = ({
           </p>
           <div className="not-prose flex items-center gap-2">
             <Button
-              className="w-fit bg-gradient-to-br from-blue-950 to-purple-900 text-white"
+              className="w-fit bg-gradient-to-br from-blue-500 to-purple-400 text-white"
               asChild
               onClick={() => setShowModal(true)}
             >
