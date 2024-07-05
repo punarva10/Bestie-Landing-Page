@@ -26,7 +26,7 @@ const FeatureLeft = ({
             className="fill object-cover"
           />
         </div>
-        <div className="flex flex-col gap-6 py-8">
+        <div className="flex flex-col gap-6">
           <h3 className="!my-0">Replace Your Whatsapp</h3>
           <p className="font-light leading-[1.4] opacity-70">
             Avoid the clutter of all your college groups, your family groups and

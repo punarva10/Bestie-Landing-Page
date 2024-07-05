@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <Main>
-      <Section id="hero">
+      <Section id="hero" className="pt-8 md:pt-16">
         <Container>
           <Hero setShowModal={setShowModal}/>
         </Container>
