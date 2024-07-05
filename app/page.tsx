@@ -10,7 +10,7 @@ import Modal from "@/components/home-page/modal";
 import { useState } from "react";
 
 export default function Home() {
-  const [showModal, setShowModal] = useState<boolean>(true)
+  const [showModal, setShowModal] = useState<boolean>(false)
 
   return (
     <Main>
