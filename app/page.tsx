@@ -3,6 +3,7 @@
 import { Container, Main, Section } from "@/components/craft";
 import CTA from "@/components/home-page/cta";
 import FeatureLeft from "@/components/home-page/feature-left";
+import FeatureLeft2 from "@/components/home-page/feature-left-2";
 import FeatureRight from "@/components/home-page/feature-right";
 import Footer from "@/components/home-page/footer";
 import Hero from "@/components/home-page/hero";
@@ -27,6 +28,11 @@ export default function Home() {
       <Section id="feature-right">
         <Container>
           <FeatureRight setShowModal={setShowModal}/>
+        </Container>
+      </Section>
+      <Section id="feature-left-2">
+        <Container>
+          <FeatureLeft2 setShowModal={setShowModal}/>
         </Container>
       </Section>
       <Section id="cta">
