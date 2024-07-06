@@ -1,22 +1,20 @@
 // React and Next.js imports
 import Image from "next/image";
-import Link from "next/link";
 
 // Third-party library imports
-import Balancer from "react-wrap-balancer";
 import { ArrowRight } from "lucide-react";
+import Balancer from "react-wrap-balancer";
 
 // Local component imports
-import { Section, Container } from "@/components/craft";
+import { Container, Section } from "@/components/craft";
 import { Button } from "../ui/button";
 
 // Asset imports
-import Placeholder from "@/public/placeholder.webp";
 import { Dispatch, SetStateAction } from "react";
 
 const Hero = ({setShowModal} : {setShowModal: Dispatch<SetStateAction<boolean>>}) => {
   return (
-    <Section>
+    <Section className="">
       <Container>
         <div>
           <Button

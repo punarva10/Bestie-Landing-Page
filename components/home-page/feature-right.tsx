@@ -27,7 +27,7 @@ const FeatureRight = ({
             Share posts, notes and videos only with your close friends and
             receive updates about only their lives.
           </p>
-          <div className="not-prose flex items-center gap-2">
+          <div className="not-prose flex items-center gap-2 pb-6">
             <Button
               className="w-fit bg-gradient-to-br from-blue-500 to-purple-400 text-white cursor-pointer"
               asChild
